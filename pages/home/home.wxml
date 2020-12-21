@@ -1,3 +1,18 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+<!-- 1.mustache语法 -->
+<view>-------1.--------</view>
+<view>{{name}}</view>
+<!-- 2.数组数据展示 -->
+<view>---------2.-------</view>
+<view>{{basketball[0].name}}</view>
+<view wx:for="basketball">{{item}}</view>
+<view wx:for="{{basketball}}">{{item.name}}</view>
+<view wx:for="{{basketball}}">{{item.name}}--{{item.age}}</view>
+<!-- 3.事件监听，改变data -->
+<view>---------3.---------</view>
+<view>数字为：{{number}}</view>
+<button bindtap="addition" size="mini">加1</button>
+<button bindtap="subtraction" size="mini">减1</button>
+
