@@ -1,3 +1,21 @@
+<!-- 这个包主要讲了
+     1.app.json里面的全局操作和tabbar的使用熟悉 
+     2.app.js里面的生命周期函数的使用以及进入状态的判断
+     3.获取用户信息的三种方法
+     4.全局数据和变量的配置及使用
+-->
 <!--pages/home/home.wxml-->
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+<!-- 获取用户信息的方法二 -->
+<!-- 特定的类型和必须用这个绑定事件 -->
+<!-- 获取到的用户信息与wx.getuserinfo一致 -->
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="handlegetuserinfo">
+  获取授权
+</button>
+<view>------------获取用户信息------------</view>
+<!-- 获取用户的信息，只展示用内置组件 -->
+<open-data type="userNickName" type="userAvatarUrl"></open-data>
+<view>----------拿到app.js里定义的全局数据，通过home.js里面的返回值调用-----------</view>
+<view>----{{name}}</view>
+<view>-------{{age}}</view>

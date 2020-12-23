@@ -33,7 +33,27 @@ App({
       }
     })
   },
-  globalData: {
-    userInfo: null
+  
+  onShow:function(option){
+    // 判断小程序的应用场景
+    // onshow 执行多次，用户每进入一次小程序都要进行执行，而onlaunch是小程序初始化时执行。
+    console.log(option)
+    switch(option.scene){
+      case 1001 :
+        break;
+        case 1011:
+          console.log('我是由扫描二维码进入的')
+    };
+    // 获取用户信息 方法一：方法二见home.wxml
+    wx.getUserInfo({
+      success(res){
+        console.log(res)
+      }
+    })
+  },
+  globalData: {    //设置全局的数据和变量
+    name:'wangcai',
+    age:18,
+    isshow:true
   }
 })

@@ -13,19 +13,20 @@
   },
   "tabBar": {
     "selectedColor": "#ff5777",
-   "list": [
-     {
-       "pagePath": "pages/home/home",
-       "text": "我是首页面",
-       "iconPath": "assets/tabbar/home.png",
-       "selectedIconPath": "assets/tabbar/home_selected.png"
-     },
-     {
-      "pagePath": "pages/about/about",
-      "text": "我是about",
-      "iconPath": "assets/tabbar/car.png",
-      "selectedIconPath": "assets/tabbar/car_selected.png"
-    }
-   ]
-  }
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "我是首页面",
+        "iconPath": "assets/tabbar/home.png",
+        "selectedIconPath": "assets/tabbar/home_selected.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "我是about",
+        "iconPath": "assets/tabbar/car.png",
+        "selectedIconPath": "assets/tabbar/car_selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap60.json"
 }
